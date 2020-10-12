@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        title Document
+    body
+        include header.pug
+        section#head
+            .container
+                .head
+                    .head-info
+                        h1.head-info__title.h1 Ультрозвуковой скраббер с режимом masteric
+                        p.head-info__subtitle description - ултразвуковой скраббер creamic имеет специально разработанный режим masteric с точно подобранной частотой для максимального отклика клеток кожи лежащей в пределах между 500 Гц и 600 Гц 
+                        .head-info__cta
+                            a(href="#").head-info__button.cta купить
+                            p.head-info__price 7460 руб
+                    .head-image
+                        img(src="img/head-scrubber.png", alt="Скраббер")
+        section#solution
+            .container
+                .solution
+                    h2.solution__title.h2 почему masteric?
+                    .solution__list
+                        .solution__item
+                            img(src="img/why-1.jpg", alt="Удаляет угри")
+                            p Удаляет угри
+                        .solution__item
+                            img(src="img/why-2.jpg", alt="Разглаживает морщины")
+                            p Разглаживает морщины
+                        .solution__item
+                            img(src="img/why-3.jpg", alt="Убирает излишнее подкожное сало")
+                            p Убирает излишнее подкожное сало
+        section#howWork
+            .container
+                .work
+                    .work__title.h2 как это работает?
+                    .work__info
+                        .work__text
+                            p Способно проходить через верхние слои эпидермиса, улучшая движение лимфатической жидкости и выполняя своеобразный массаж эпидермальных слоев кожи
+                            p Ультразвуковые колебания, проходя через глубокие слои кожи, на несколько градусов разогревают их (без коагуляции) – что стимулирует повышение упругости тканей, а также усиливает приток крови и процесс выработки коллагена
+                            p Ультразвуковая волна заставляет молекулы жидкостей, входящих в состав тканей, двигаться с определенным ускорением, тем самым способствуя повышению скорости процесса обмена веществ и улучшая регенеративную способность тканей к самовосстановлению
+                        .work__image
+                            img(src="img/how-work.jpg", alt="")
+        section#result
+            .container
+                .result
+                    .result__title.h2 результат применения
+                    .result__info
+                        ul.result__info-list
+                            li.result__info-item Лифтинг
+                            li.result__info-item Удаление угрей без повреждения эпидермиса
+                            li.result__info-item Уменьшение морщин
+                            li.result__info-item Глубокая очистка кожных пор
+                            li.result__info-item Нет повреждения эпидермиса
+                            li.result__info-item Удалению отмерших эпидермальных чешуек
+                            li.result__info-item Повышаются процессы обмена внутри клеток дермы
+                        .result__info-images
+                            img(src="img/result-1.jpg", alt="")
+                            img(src="img/result-2.jpg", alt="")
+        section#opinion
+            .container
+                .opinion
+                    .opinion__title.h2 мнение эксперта
+                    .opinion__info
+                        .opinion__text
+                            p.opinion__text-item Все индивидуально, но для жирной кожи желательно проводить такую процедуру рас в месяц, учитывая стоимость процедуры в косметических салонах покупка персонального прибора отличное решение. Для достижения максимального эффекта необходимо не пренебрегать всеми этапами процедуры: подготовка, распаривание, очистка и после процедурный уход. С применением качественных средств.
+                            .opinion__cta
+                                a(href="#").opinion__button.cta купить
+                                p.opinion__price 7460 руб
+                        .opinion__image
+                            img(src="img/expert.jpg", alt="")
+        section#mods
+            .container
+                .mods
+                    .mods__title.h2 Режимы
+                    .mods__list
+                        .mods__item
+                            img(src="img/modes-1.svg", alt="Низкочастотный")
+                            h3.mods__item-title.h3 Низкочастотный
+                            p.mods__item-subtitle Ультразвук не травмирует кожу. Его воздействие безболезненно позволяя в то же время получить максимальный эффект.
+                        .mods__item
+                            img(src="img/modes-1.svg", alt="Глубокое воздействие")
+                            h3.mods__item-title.h3 Глубокое воздействие
+                            p.mods__item-subtitle С помощью скрабера лица можно решить множество задач, начиная глубоким очищением пор и заканчивая сглаживанием неровностей на кожном покрове.
+                        .mods__item
+                            img(src="img/modes-3.svg", alt="Очистка")
+                            h3.mods__item-title.h3 Очистка
+                            p.mods__item-subtitle Под воздействием ультразвука поры очищаются от остатков косметики, пыли, сальных пробок. Кожа избавляется от загрязнений и легко дышит.
+        section#sale
+            .container
+                .sale
+                    .sale__info
+                        .sale__set
+                            p Закажите сейчас и получите набор косметики в подарок
+                            .sale__set-images
+                                img(src="img/mask.png", alt="Маска")
+                                img(src="img/cleaner.png", alt="Очиститель")
+                                img(src="img/steamer.png", alt="Распариватель")
+                                img(src="img/humidifier.png", alt="Увлажнитель")
+                        .sale__timer
+                            h2.sale__title.h2 акция
+                            p.timer
+                            a(href="#").sale__button.cta купить
+        section#equipment
+            .container
+                .equipment
+                    .equipment__title
+                    .equipment__info
+                        .equipment__wrapper
+                            .equipment__item
+                                .equipment__item-title.h3.right Инструкция
+                                .equipment__item-subtitle.right Выполняйте процедуру чистки плавными движениями, направленными от боковых поверхностей лица к его центру против роста волос.
+                            .equipment__item
+                                .equipment__item-title.h3.right Подставка
+                                .equipment__item-subtitle.right Удобная подставка осуществляющая зарядку скраббера с 0 до 100 всего за 2 часа. 
+                        .equipment__wrapper-image
+                            .equipment__image
+                                img(src="img/equipment.png", alt="")
+                        .equipment__wrapper
+                            .equipment__item
+                                .equipment__item-title.h3.left Cкрабер
+                                .equipment__item-subtitle.left Ультразвуковой аппарат состоит из электронного блока с встроенным ультразвуковым преобразователем, с рабочим инструментом в виде металлической лопаточки трапециевидной формы.
+                            .equipment__item
+                                .equipment__item-title.h3.left Провод
+                                .equipment__item-subtitle.left Удобство заключается в том, что нет необходимости придерживать провод ввиду возможности отсоединить его от скраббера
+        section#recommendation
+            .container
+                
+        section#howOrder
+            .container
+                
+        section#contacts
+            .container
+                
+        include footer.pug

@@ -1,0 +1,36 @@
+%container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+%h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+%h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $accent;
+    display: flex;
+    align-items: center;
+}
+%h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+%cta-btn {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #A825F9 0%, #F02BF3 100%);
+    color: $white;
+}
