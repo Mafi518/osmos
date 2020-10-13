@@ -426,8 +426,9 @@ header::before {
 }
 
 .sale__timer {
-    max-width: 280px;
+    max-width: 570px;
     width: 100%;
+    font-weight: bold;
 }
 
 .timer {
@@ -445,6 +446,7 @@ header::before {
 
 .equipment__info {
     display: flex;
+    align-items: center;
 }
 
 .equipment__item {
@@ -482,18 +484,119 @@ header::before {
     }
 }
 
+// recomendation
 
+#recommendation {
+    background-image: url(img/bg-svg-5.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 300px 0;
+    position: relative;
+    z-index: 1;
+}
 
+#recommendation::before {
+    content: 'рекомендуемые средства для ухода';
+    text-transform: uppercase;
+    font-size: 74px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    z-index: 0;
+    left: -30px;
+    top: 230px;
+    color: #4A4A4A;
+    opacity: 0.2;
+    z-index: -1;
+}
 
+.recommendation__title {
+    color: $white;
+}
 
+.recommendation__title::before {
+    background-color: $white;
+}
 
+.recommendation__list {
+}
 
+.recommendation__item {
+    max-width: 269px;
+    font-size: 14px;
+    text-align: center;
+    color: $white;
+    font-family: Montserrat;
+    font-weight: 300;
+    position: relative;
+}
 
+.recommendation__item:last-child {
+}
 
+.recommendation__item img{
 
+}
 
+.recommendation__item-title {
+    margin-bottom: 10px;
+}
 
+.recommendation__item-subtitle {
+}
 
+.slick-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-arrow {
+    position: absolute;
+    right: 30px;
+    font-size: 0;
+    top: 0;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+    height: 42px;
+    outline: none;
+    cursor: pointer;
+}
+.slick-next {
+    background-image: url(img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slick-prev {
+    background-image: url(img/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 80px;
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        display: none;
+    }
+    li {
+        font-size: 0;
+        width: 16px;
+        border: 1px solid #fff;
+        height: 16px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    li + li {
+        margin-left: 10px;
+    }
+    .slick-active {
+        background: rgb(255, 255, 255);
+    }
+}
 
 
 

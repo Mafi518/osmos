@@ -25,9 +25,26 @@ const countDownEl = document.querySelector('.timer')
 setInterval(updateCountDown, 1000)
 
 function updateCountDown() {
+    const hours = 3
     const minutes = Math.floor(time / 60)
     let seconds = time % 60
     seconds = seconds < 10 ? '0' + seconds : seconds
-    countDownEl.innerHTML = `${minutes}:${seconds}`
+    countDownEl.innerHTML = `${hours} : ${minutes} : ${seconds}`
     time--
 }
+
+$(document).ready(function(){
+    $('.recommendation__list').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 421,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+});
