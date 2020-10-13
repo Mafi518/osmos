@@ -156,8 +156,40 @@ html(lang="en")
                             p.recommendation__item-subtitle Успокаивает кожу и сужает поры 
         section#howOrder
             .container
-                
+                .howOrder
+                    .howOrder__title.h2 как заказать? 
+                    .howOrder__list
+                        .howOrder__item
+                            p Оставляете контакты: адрес доставки, телефон, email
+                        .howOrder__item
+                            p Менеджер звонит для подтверждения и уточнения деталей (адрес, время, кто получает)
+                        .howOrder__item
+                            p Менеджер высылает вам ссылку на оплату, по которой вы оплачиваете товар
+                        .howOrder__item
+                            p Курьер привозит вам заказ
+                        .howOrder__item
+                            p Доставка: Москва и МО 250р 2 дня По России 400р 4-5 дней
         section#contacts
             .container
-                
+                .contacts
+                    .contacts__title.h2 Контакты
+                    .contacts__wrapper
+                        form.contacts__form(action="#")
+                            input(type="text" placeholder="Введите ваше ФИО").contacts__form-input
+                            input(type="text" placeholder="Введите ваш emai").contacts__form-input
+                            input(type="text" placeholder="Введите ваш номер телефона").contacts__form-input
+                            button(type="submit").contacts__form-button.cta заказать звонок
+                        .contacts__list
+                            .contacts__item
+                                img(src="img/phone.svg", alt="телефон")
+                                p +7(499)383-45-12
+                            .contacts__item
+                                img(src="img/telegram.svg", alt="телеграм")
+                                p +7(922)2-170-491
+                            .contacts__item
+                                img(src="img/whatsapp.svg", alt="вацап")
+                                p +7(922)2-170-491
+                            .contacts__item
+                                img(src="img/mail.svg", alt="почта")
+                                p support@osmos-tech.ru
         include footer.pug

@@ -6,8 +6,206 @@
     
 }
 
+@media (max-width: 900px) {
+    .sale__timer {
+        max-width: 460px;
+    }
+}
+
 @media (max-width: 768px) {
-    
+    header::before {
+        background-image: url(img/header-bg-svg-768.svg);
+        height: 124px;
+
+    }
+    header {
+        height: 102px;
+        margin-bottom: 40px;
+        .container {
+            justify-content: space-around;
+        }
+    }
+    .logo {
+        order: 1;
+        font-size: 40px;
+    }
+    .menu-icon {
+        order: 0;
+    }
+    .question-phone {
+        order: 2;
+    }
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #000;
+        overflow: hidden;
+        width: 100%;
+        z-index: 4;
+        position: fixed;
+        right: 0;
+        height: 0;
+        top: 0;
+        opacity: 0.8;
+        transition: 0.3s;
+
+        .menu__link {
+            color: #fff;
+            font-size: 30px;
+            width: 100%;
+        }
+        .menu__item + .menu__item {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+    }
+    .menu__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 15px;
+    }
+    .menu__active {
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        position: relative;
+        cursor: pointer;
+        height: 32px;
+        z-index: 5;
+        span, ::before, ::after {
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+        }
+        ::after, ::before {
+            content: '';
+            display: block;
+            transition: 0.2s;
+        }
+        ::after {
+            transform: translateY(10px);
+        }
+        ::before {
+            transform: translateY(-10px);
+        }
+    }
+    .menu-icon__active span {
+        height: 0;
+        background-color: #fff;
+    }
+    .menu-icon__active span::before {
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+    .menu-icon__active span::after {
+        transform: rotate(-45deg);
+        background-color: #fff;
+    }
+    .menu__active {
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .menu-icon__active {
+    }
+    .logo a{
+        color: $white;
+    }
+    #head::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 768px;
+        width: 100%;
+        height: 610px;
+        background-image: url(img/bg-svg-adaptive-768.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -2;
+    }
+    .head-info {
+        order: 1;
+        text-align: right;
+    }
+    .head {
+        height: 60vh;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .head-image {
+        position: relative;
+        img {
+            display: none;
+        }
+    }
+    .head-image {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 915px;
+        background-image: url(img/768-head-photo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    .head-info__subtitle {
+        font-size: 18px;
+    }
+    .head-info__price {
+        order: 0;
+        margin-left: 0;
+    }
+    .head-info__button {
+        order: 1;
+        margin-left: 20px;
+    }
+    .head-info__cta {
+        justify-content: flex-end;
+    }
+    .opinion__info {
+        flex-direction: column;
+    }
+    .opinion__image {
+        order: 0;
+        margin-left: 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .opinion__text {
+        order: 1;
+        .opinion__cta {
+            margin-top: 140px;
+        }
+    }
+    #opinion {
+        padding-top: 410px;
+        padding-bottom: 340px;
+    }
+
+
+
+
+
+
+
+
+
+
+        
+    #solution {
+        margin-top: 200px;
+    }
 }
 
 @media (max-width: 620px) {

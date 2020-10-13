@@ -41,8 +41,7 @@ $(document).ready(function(){
             {
                 breakpoint: 421,
                 settings: {
-                    arrows: false,
-                    dots: true
+                    
                 }
             }
         ]
