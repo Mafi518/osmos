@@ -33,17 +33,50 @@ function updateCountDown() {
     time--
 }
 
+const submit = document.querySelector('.contacts__form-button').addEventListener('click', e => {
+    e.preventDefault()
+    const popup = document.querySelector('.success__popup')
+    const popupBg = document.querySelector('.popup__bg')
+    const popupExit = document.querySelector('.success__exit')
+
+    popupBg.classList.toggle('success__bg-active')
+    popup.classList.toggle('success__popup-active')
+
+    popupBg.addEventListener('click', () => {
+        popupBg.classList.remove('success__bg-active')
+        popup.classList.remove('success__popup-active')
+    })
+
+    popupExit.addEventListener('click', () => {
+        popupBg.classList.remove('success__bg-active')
+        popup.classList.remove('success__popup-active')
+    })
+})
+
 $(document).ready(function(){
     $('.recommendation__list').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 421,
+                breakpoint: 769,
                 settings: {
-                    
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 471,
+                settings: {
+                    slidesToShow: 1
                 }
             }
+            
         ]
     });
 });
